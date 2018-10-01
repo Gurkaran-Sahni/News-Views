@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="News Settings">
+
+    <ListPreference
+        android:defaultValue="newest"
+        android:entries="@array/settings_order_by_labels"
+        android:entryValues="@array/settings_order_by_values"
+        android:key="order by"
+        android:title="Order By" />
+
+    <EditTextPreference
+        android:defaultValue="us"
+        android:inputType="textAutoComplete"
+        android:key="country"
+        android:selectAllOnFocus="true"
+        android:title="Country" />
+
+    <EditTextPreference
+        android:defaultValue="10"
+        android:inputType="textAutoComplete"
+        android:key="page size"
+        android:selectAllOnFocus="true"
+        android:title="Page Size" />
+
+</PreferenceScreen>
